@@ -24,6 +24,7 @@ public class Pattern12 {
                 if(j==i) System.out.print(j);
                 else System.out.print(j + " ");
             }
+            //           total  no. of numbers and spaces - no. of spaces and numbers
             for (int j = 1; j <= (2*n + 2*(n-1) + 1)   -  (2*(i-1) + 2*i); j++) {
                 System.out.print(" ");
             }
