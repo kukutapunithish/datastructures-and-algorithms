@@ -13,14 +13,14 @@ public class Pattern22 {
     4 3 2 2 2 3 4
     4 3 3 3 3 3 4
     4 4 4 4 4 4 4
-
-    4           4   // 11  5    1
-    4 3       3 4   // 7   3    2
-    4 3 2   2 3 4   // 3   1    3
-    4 3 2 1 2 3 4   // 0   0    4
-    4 3 2   2 3 4   // 3   1    5
-    4 3       3 4   // 7   3    6
-    4           4   // 11  5    7
+total no. of numbers+spaces   total numbers which have to be filled
+    4           4   // 11       5    1
+    4 3       3 4   // 7        3    2
+    4 3 2   2 3 4   // 3        1    3
+    4 3 2 1 2 3 4   // 0        0    4
+    4 3 2   2 3 4   // 3        1    5
+    4 3       3 4   // 7        3    6
+    4           4   // 11       5    7
 
 
      */
@@ -52,7 +52,7 @@ public class Pattern22 {
 
         //Alternate Approach
 
-        //This approach takes the distance from all directions and claculates the minimum value and subtracts it with n
+        //This approach takes the distance from all directions and calculates the minimum value and subtracts it with n
 
         for (int i = 0; i < 2 * n - 1; i++) {
             for (int j = 0; j < 2 * n - 1; j++) {
