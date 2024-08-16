@@ -2,6 +2,7 @@ package arrays;
 
 public class MoveZeros {
 
+//    Push the zero to the end of the array for each zero found
     void moveZeros(int[] arr, int n) {
         int end = arr.length - 1;
         for (int i = end; i >= 0; i--) {
@@ -14,7 +15,8 @@ public class MoveZeros {
         }
     }
 
-    //3, 5, 0, 4, 0
+
+    //Swap the elements if non zero element found
     void moveZerosTwo(int[] arr, int n) {
         int j = -1;
         for (int i = 0; i < n; i++) {
@@ -23,6 +25,7 @@ public class MoveZeros {
                 break;
             }
         }
+
         for (int i = j + 1; i < n; i++) {
             if(arr[i] != 0) {
                 int temp = arr[i];
@@ -35,9 +38,9 @@ public class MoveZeros {
 
 
     //Leet code comment solution beats 99%
-    public void moveZeroesThree(int[] nums) {
+    public void moveZerosThree(int[] nums,int n) {
         int snowBallSize = 0;
-        for (int i=0;i<nums.length;i++){
+        for (int i=0;i<n;i++){
             if (nums[i]==0){
                 snowBallSize++;
             }
@@ -57,10 +60,10 @@ public class MoveZeros {
     }
 
     public static void main(String[] args) {
-        int[] arr = {3, 5, 0, 4, 0};
+        int[] arr = {3, 5, 0,7, 4,6, 0};
         int n = arr.length;
         MoveZeros m = new MoveZeros();
-        m.moveZerosTwo(arr, n);
+        m.moveZerosThree(arr, n);
         m.printArray(arr);
     }
 

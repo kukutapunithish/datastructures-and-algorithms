@@ -1,8 +1,6 @@
 package arrays;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 
 public class RemoveDuplicates {
     //3.1 4Q
@@ -35,6 +33,14 @@ public class RemoveDuplicates {
             }
         }
         return i + 1;
+    }
+
+    int lengthUnique(int[] arr) {
+        Set<Integer> res = new TreeSet();
+        for (int a : arr) {
+            res.add(a);
+        }
+        return res.size();
     }
 
     public static void main(String[] args) {

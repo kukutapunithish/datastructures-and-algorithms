@@ -2,7 +2,7 @@ package sortingalgo;
 
 public class SelectionSort {
 
-    static void selection_sort(int arr[], int n) {
+    static void selectionSort(int arr[], int n) {
         for (int i = 0; i < n - 1; i++) {
             int mini = i;
             for (int j = i + 1; j < n; j++) {

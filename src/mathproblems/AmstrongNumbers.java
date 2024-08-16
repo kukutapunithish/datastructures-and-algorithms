@@ -1,5 +1,8 @@
 package mathproblems;
 
+/*
+Check if a number is Armstrong Number or not
+*/
 public class AmstrongNumbers {
 
     public static void main(String[] args) {
